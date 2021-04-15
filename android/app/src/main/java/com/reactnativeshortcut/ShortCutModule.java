@@ -61,7 +61,7 @@ public class ShortCutModule extends ReactContextBaseJavaModule {
             final Intent intent = new Intent();
             intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
             intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, shortcutDetail.getString(LABEL_NAME));
-            intent.putExtra(ShortcutManagerCompat.EXTRA_SHORTCUT_ID, 1);
+            intent.putExtra(ShortcutManagerCompat.EXTRA_SHORTCUT_ID, shortcutDetail.getString(ID_KEY));
             intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getReactApplicationContext(), iconId));
             intent.putExtra("duplicate", false);
             intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
