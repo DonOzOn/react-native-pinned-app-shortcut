@@ -1,7 +1,6 @@
 {
   "name": "react-native-pinned-app-shortcut",
   "version": "0.0.1",
-  "private": true,
   "description": "React Native library for creating app pinned shortcuts in android",
   "main": "index.js",
   "repository": {
